@@ -1,0 +1,62 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>15 Number Puzzle</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="titlebox" id="blackit">
+        <h1>15 Number Game</h1>
+    </div>
+
+    <div class="gamebox">
+    <div class="info">
+        <button class="startbtn" onclick="newstart()">New game</button>
+        <div class="score">
+            <div id="timetaken" class="clock">
+                TIME<br>
+                <span id="seconds">
+                0
+                </span>
+                s
+            </div>
+            <div class="movecount">
+                MOVES<br>
+            <span id="moves" >
+                0
+            </span>
+        </div>
+        </div>
+    </div>
+    <div class="board">
+        <button class="cellA" id="cell11" onclick="clicktile(1,1)"></button>
+        <button class="cellB" id="cell12" onclick="clicktile(1,2)"></button>
+        <button class="cellA" id="cell13" onclick="clicktile(1,3)"></button>
+        <button class="cellB" id="cell14" onclick="clicktile(1,4)"></button>
+        <button class="cellB" id="cell21" onclick="clicktile(2,1)"></button>
+        <button class="cellA" id="cell22" onclick="clicktile(2,2)"></button>
+        <button class="cellB" id="cell23" onclick="clicktile(2,3)"></button>
+        <button class="cellA" id="cell24" onclick="clicktile(2,4)"></button>
+        <button class="cellA" id="cell31" onclick="clicktile(3,1)"></button>
+        <button class="cellB" id="cell32" onclick="clicktile(3,2)"></button>
+        <button class="cellA" id="cell33" onclick="clicktile(3,3)"></button>
+        <button class="cellB" id="cell34" onclick="clicktile(3,4)"></button>
+        <button class="cellB" id="cell41" onclick="clicktile(4,1)"></button>
+        <button class="cellA" id="cell42" onclick="clicktile(4,2)"></button>
+        <button class="cellB" id="cell43" onclick="clicktile(4,3)"></button>
+        <button class="cellA" id="cell44" onclick="clicktile(4,4)"></button>
+
+    </div>
+    <button class="pausebtn" id="stop" onclick="stopTimer()">Pause</button>
+</div>
+<div class="messageinstruct">Your Objective is to move tiles in grid to order them from 1 to 15.<br> Press New Button when you are ready.<br>GOOD LUCK!</div>
+    <script src="script.js"></script>
+</body>
+</html>
